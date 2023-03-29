@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/telegram-app-chenges/static/css/main.d20e182a.css",
+    "main.js": "/telegram-app-chenges/static/js/main.c9cf697b.js",
+    "index.html": "/telegram-app-chenges/index.html",
+    "main.d20e182a.css.map": "/telegram-app-chenges/static/css/main.d20e182a.css.map",
+    "main.c9cf697b.js.map": "/telegram-app-chenges/static/js/main.c9cf697b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d20e182a.css",
+    "static/js/main.c9cf697b.js"
+  ]
+}
