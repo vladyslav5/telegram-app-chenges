@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/telegram-app-chenges/static/css/main.d20e182a.css",
-    "main.js": "/telegram-app-chenges/static/js/main.c9cf697b.js",
+    "main.js": "/telegram-app-chenges/static/js/main.aa956ac6.js",
     "index.html": "/telegram-app-chenges/index.html",
     "main.d20e182a.css.map": "/telegram-app-chenges/static/css/main.d20e182a.css.map",
-    "main.c9cf697b.js.map": "/telegram-app-chenges/static/js/main.c9cf697b.js.map"
+    "main.aa956ac6.js.map": "/telegram-app-chenges/static/js/main.aa956ac6.js.map"
   },
   "entrypoints": [
     "static/css/main.d20e182a.css",
-    "static/js/main.c9cf697b.js"
+    "static/js/main.aa956ac6.js"
   ]
 }
