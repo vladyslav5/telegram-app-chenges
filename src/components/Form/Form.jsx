@@ -4,8 +4,8 @@ import axios from "axios";
 import {useTelegram} from "../../hook/useTelegram";
 
 const Form = () => {
-    const [name, setName] = useState("")
-    const [lastName, setLastName] = useState("")
+    // const [name, setName] = useState("")
+    // const [lastName, setLastName] = useState("")
     const [course, setCourse] = useState("")
     const [group, setGroup] = useState("")
     const [groups, setGroups] = useState()
@@ -20,12 +20,12 @@ const Form = () => {
     const onSendData = useCallback(() => {
         const data = {
             course,
-            name,
-            lastName,
+           // name,
+          //  lastName,
             group
         }
         tg.sendData(JSON.stringify(data))
-    }, [course,name,lastName,group])
+    }, [course,group])
     useEffect(() => {
         tg.onEvent('mainButtonClicked', onSendData)
         return () => {
@@ -42,20 +42,15 @@ const Form = () => {
         })
     }, [course])
     useEffect(() => {
-        if (!name || !lastName || !course || !group) {
+        if (/*!name || !lastName*/  !course || !group) {
             tg.MainButton.hide()
         } else {
             tg.MainButton.show()
         }
-    }, [name, group, lastName, course])
+    }, [group,course])
     return (
         <div className={"form"}>
-            <h1>Заповніть данні</h1>
-            <input placeholder={"Ім'я"} type={"text"} className={"input"} value={name}
-                   onChange={e => setName(e.target.value)}/>
-            <input placeholder={"Фамілія"} type={"text"} className={"input"} value={lastName}
-                   onChange={e => setLastName(e.target.value)}/>
-            <label className={"label"}>курс</label>
+            <h1>Оберіть розклад для группи</h1>
             <select className={"select"} value={course} onChange={e => setCourse(e.target.value)}>
                 <option></option>
                 <option value={1}>1 курс</option>
